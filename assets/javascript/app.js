@@ -9,7 +9,7 @@ $(document).on('click', '.answer-button', function (e) {
     game.clicked(e);
 })
 
-$(document).on('click', '#reset', function() {
+$(document).on('click', '#reset', function () {
     game.reset();
 })
 //questions to ask object
@@ -83,11 +83,12 @@ var game = {
     },
     results: function () {
         clearInterval(timer);
-        $('#subwrapper').html("DONE!");
-        $('#subwrapper').append("<h3>Correct: " +game.correct+"</h3>");
-        $('#subwrapper').append("<h3>Incorrect: " + game.incorrect+"</h3>");
-        $('#subwrapper').append("<h3>Unanswered: " + game.unanswered+"</h3");
+        $('#subwrapper').html("<img src ='/assets/images/GO.gif'>");
+        $('#subwrapper').append("<h3>Correct: " + game.correct + "</h3>");
+        $('#subwrapper').append("<h3>Incorrect: " + game.incorrect + "</h3>");
+        $('#subwrapper').append("<h3>Unanswered: " + game.unanswered + "</h3");
         $('#subwrapper').append("<button id='reset'>RESET</button>");
+
     },
     clicked: function (e) {
         clearInterval(timer);
@@ -102,6 +103,7 @@ var game = {
         clearInterval(timer);
         game.correct++;
         $("#subwrapper").html('<h2> You got it right!</h2>');
+        $("#subwrapper").append('<img src= ' + questions[game.currentQuestion].image + '>');
         if (game.currentQuestion == questions.length - 1) {
             setTimeout(game.results, 3 * 1000);
         } else {
