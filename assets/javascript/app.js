@@ -4,11 +4,11 @@ $("#start").on("click", function () {
     game.loadQuestion();
     console.log("Click Click")
 });
-
+//click event to start checking the answer clicked against the DOM
 $(document).on('click', '.answer-button', function (e) {
     game.clicked(e);
 })
-
+//questions to ask object
 var questions = [{
     question: "Why were M&M's invented?",
     answers: ["WWII soldiers in the desert", "It was an accident", "Disney Parks"],
@@ -36,7 +36,7 @@ var questions = [{
     image: "assets/images/doge.gif",
 }, {
 }];
-
+//Game Object
 var game = {
     questions: questions,
     currentQuestion: 0,
