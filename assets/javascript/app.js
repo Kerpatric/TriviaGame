@@ -10,10 +10,10 @@ var questions = [{
     correctAnswer: "WWII soldiers in the desert",
     image: "assets/images/m&m.gif",
 }, {
-    question: "Why were M&M's invented?",
-    answers: [""],
-    correctAnswer: "",
-    image: "assets/images/.gif",
+    question: "What Ska band once was the official Disney Land band?",
+    answers: ["Reel Big Fish", "Streetlight Manifest", "Suburban Legends", "The Mighty Mighty Bosstones"],
+    correctAnswer: "Suburban Legends",
+    image: "assets/images/disney.gif",
 }, {
     question: "Why were M&M's invented?",
     answers: [""],
