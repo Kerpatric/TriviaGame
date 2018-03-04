@@ -15,10 +15,10 @@ var questions = [{
     correctAnswer: "Suburban Legends",
     image: "assets/images/disney.gif",
 }, {
-    question: "Why were M&M's invented?",
-    answers: [""],
-    correctAnswer: "",
-    image: "assets/images/.gif",
+    question: "Can dogs look up?",
+    answers: ["Yes", "No"],
+    correctAnswer: "Yes",
+    image: "assets/images/dog.gif",
 }, {
     question: "Why were M&M's invented?",
     answers: [""],
@@ -35,5 +35,4 @@ var questions = [{
     correctAnswer: "",
     image: "assets/images/.gif",
 }, {
-}
-]
+}];
