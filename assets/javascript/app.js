@@ -10,7 +10,7 @@ var questions = [{
     correctAnswer: "WWII soldiers in the desert",
     image: "assets/images/m&m.gif",
 }, {
-    question: "What Ska band once was the official Disney Land band?",
+    question: "Which band was once the official Disney Land band?",
     answers: ["Reel Big Fish", "Streetlight Manifest", "Suburban Legends", "The Mighty Mighty Bosstones"],
     correctAnswer: "Suburban Legends",
     image: "assets/images/disney.gif",
@@ -20,19 +20,14 @@ var questions = [{
     correctAnswer: "Yes",
     image: "assets/images/dog.gif",
 }, {
-    question: "Why were M&M's invented?",
-    answers: [""],
-    correctAnswer: "",
-    image: "assets/images/.gif",
+    question: "Which of the following is not a Star Wars quote?",
+    answers: ["Luke, I am your father", "Join me and together we will rule the galaxy as father and son", "No, I am your father", "Do it!"],
+    correctAnswer: "Luke, I am your father",
+    image: "assets/images/starwars.gif",
 }, {
-    question: "Why were M&M's invented?",
-    answers: [""],
-    correctAnswer: "",
-    image: "assets/images/.gif",
-}, {
-    question: "Why were M&M's invented?",
-    answers: [""],
-    correctAnswer: "",
-    image: "assets/images/.gif",
+    question: "Which came first?",
+    answers: ["The Doberman Pinscher", "The Miniature Pinscher"],
+    correctAnswer: "The Miniature Pinscher",
+    image: "assets/images/doge.gif",
 }, {
 }];
