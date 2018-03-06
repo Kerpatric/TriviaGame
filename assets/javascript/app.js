@@ -83,11 +83,20 @@ var game = {
     },
     results: function () {
         clearInterval(timer);
-        $('#subwrapper').html("<img src ='/assets/images/GO.gif'>");
-        $('#subwrapper').append("<h3>Correct: " + game.correct + "</h3>");
-        $('#subwrapper').append("<h3>Incorrect: " + game.incorrect + "</h3>");
-        $('#subwrapper').append("<h3>Unanswered: " + game.unanswered + "</h3");
-        $('#subwrapper').append("<button id='reset'>RESET</button>");
+        if (game.correct >= 5) {
+            $('#subwrapper').html("<h1>WINNER WINNER CHICKEN DINNER!</h1>");
+            $('#subwrapper').append("<img src ='/assets/images/GO.gif'>");
+            $('#subwrapper').append("<h3>Correct: " + game.correct + "</h3>");
+            $('#subwrapper').append("<h3>Incorrect: " + game.incorrect + "</h3>");
+            $('#subwrapper').append("<h3>Unanswered: " + game.unanswered + "</h3");
+            $('#subwrapper').append("<button id='reset'>RESET</button>");
+        } else {
+            $('#subwrapper').html("<h1>YOU LOSE, LOSER!</h1>");
+            $('#subwrapper').append("<h3>Correct: " + game.correct + "</h3>");
+            $('#subwrapper').append("<h3>Incorrect: " + game.incorrect + "</h3>");
+            $('#subwrapper').append("<h3>Unanswered: " + game.unanswered + "</h3");
+            $('#subwrapper').append("<button id='reset'>RESET</button>");
+        }
 
     },
     clicked: function (e) {
